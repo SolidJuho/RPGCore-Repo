@@ -2714,5 +2714,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetDeadzone: 0.2
-  walkMoveStopRadius: 0.3
-  attackMoveStopRadius: 1
+  walkMoveStopRadius: 0.4
+  attackMoveStopRadius: 3

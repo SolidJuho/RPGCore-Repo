@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
 
     Vector3 currentDestination, clickPoint;
 
-    [SerializeField]float targetDeadzone = 0.2f;
+    //[SerializeField]float targetDeadzone = 0.2f;
     [SerializeField] float walkMoveStopRadius = 0.1f;
     public float attackMoveStopRadius = 0.5f;
     bool GamepadEnabled;
@@ -120,7 +120,9 @@ public class PlayerMovement : MonoBehaviour
         Gizmos.DrawLine(currentDestination, clickPoint);
         Gizmos.DrawSphere(clickPoint, 0.2f);
 
-
+        //Draw attack sphere
+        Gizmos.color = new Color(255f, 0f, 0f, 0.4f);
+        Gizmos.DrawSphere(transform.position, attackMoveStopRadius);
     }
 }
 
